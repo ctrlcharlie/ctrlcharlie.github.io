@@ -1,0 +1,143 @@
+@font-face {
+	font-family: lineto;
+	src:url(lineto-replica-regular.woff);
+}
+@font-face {
+	font-family: romana;
+	src:url(ufonts.com_romana-bt-roman.ttf);
+}
+@font-face {
+	font-family: gt;
+	src:url(GT-America-Regular.woff);
+}
+@font-face {
+	font-family: 'gt-wide';
+	src:url(GT-America-Expanded-Bold.woff);
+}
+
+
+
+
+
+::selection {
+	background-color: #ddd;
+}
+
+body {
+	margin: 19px;
+	font-family: gt;
+	cursor: url(cursor-circle-lg-yellow-fill.png) 15 15,auto !important;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+}
+
+#fade {
+	position: fixed;
+	z-index: 1000;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: transparent url("mask-white.png") repeat-x center center;
+	height: 200px;
+}
+#hand {
+	position: fixed;
+    top: -60px;
+    right: 12%;
+    height: 450px;
+    z-index: -1;
+    transform: rotate(14deg);
+}
+#hand-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 8%;
+	height: 450px;
+	z-index: -1;
+	transform: rotate(236deg) scaleX(-1);
+}
+
+#content {
+	margin-top: 5em;
+}
+
+.large {
+	font-size: 3.75em;
+	text-indent: 120px;
+	text-align: justify;
+	width: 66.66667%;
+	margin-left: 16.66667%;
+	line-height: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: none;
+    margin-bottom: 3em;
+}
+
+.portfolio-item {
+	width: 66.66667%;
+	margin-left: 16.66667%;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+.portfolio-title {
+	font-size: 6em;
+	letter-spacing: -2px;
+	font-family: gt-wide;
+   	color: white;
+   	text-shadow:
+       -6px 6px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+    display: inline-block;
+    text-transform: uppercase;
+    margin:0;
+}
+.portfolio-desc {
+	font-size: 1.5em;
+	margin-top: 0.4em;
+}
+.portfolio-date {
+	transform: rotate(-90deg);
+    position: absolute;
+    top: 55px;
+    left: -85px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1350px) {
+	.large {
+		font-size: 2.8em;
+		text-indent: 90px;
+		line-height: 1.5em;
+		letter-spacing: 1.2px;
+	}
+	#hand {
+		height: 350px;
+	}
+	#hand-bottom {
+		height: 350px;
+	}
+}
